@@ -1,0 +1,41 @@
+.search {
+    background-color: transparent;
+    border: 2px solid #d6dadf2e;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    width: 30%;
+    transition: all 0.6s;
+  }
+
+  .search::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .search:focus {
+    outline: none;
+    background-color: #03213a;
+  }
+
+  .wrapper {
+    color: white;
+    min-height: calc(100vh - 64px);
+    min-width: 100vw;
+    text-align: center;
+    padding-top: 5%;
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../assets/images/softray1.png");
+  }
+
+        h2 {
+          font-size: 70px;
+          font-family: sans-serif;
+        }
+
+        h3 {
+            font-weight: lighter;
+          }
