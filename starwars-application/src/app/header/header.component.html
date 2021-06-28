@@ -1,9 +1,10 @@
 <header>
   <div class="container">
     <ul>
-      <img class="logo" src="../../assets/images/logo.svg">
-
-      <li [routerLink]="['/home']" routerLinkActive="router-link-active">Films</li>
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active" >
+        <img class="logo" src="../../assets/images/logo.svg">
+      </a>
+      <li [routerLink]="['/all-films']" routerLinkActive="router-link-active">Films</li>
       <li [routerLink]="['/home']" routerLinkActive="router-link-active">People</li>
       <li [routerLink]="['/home']" routerLinkActive="router-link-active">Planets</li>
       <li [routerLink]="['/home']" routerLinkActive="router-link-active">Species</li>

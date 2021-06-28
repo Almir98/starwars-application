@@ -9,12 +9,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { appRoutes } from './routes';
+import { FilmsComponent } from './films/films.component';
+
+import { FilmsService } from './_services/films.service';
 
 @NgModule({
-  declarations: [		
+  declarations: [			
     AppComponent,
       HomeComponent,
-      HeaderComponent
+      HeaderComponent,
+      FilmsComponent
    ],
   imports: [
     BrowserModule,
@@ -24,7 +28,10 @@ import { appRoutes } from './routes';
     RouterModule.forRoot(appRoutes),
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    FilmsService
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
