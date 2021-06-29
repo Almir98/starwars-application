@@ -13,10 +13,18 @@ export class FilmsComponent implements OnInit {
   constructor(private filmsService: FilmsService) { }
 
   ngOnInit() {
-    console.log(this.filmsService.getAllFilms());
+    this.getAllFilms();
   }
 
-  
+  getAllFilms()
+  {
+    this.filmsService.getAllFilms().subscribe(responseData =>{
 
+      this.data = responseData;
+      console.log(this.data.results);
+    }, error =>{
 
+      console.log(error);
+    })
+  }
 }

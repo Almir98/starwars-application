@@ -7,7 +7,7 @@ import { Film } from '../_models/film';
 @Injectable()
 export class FilmsService {
 
-  apiURL = environment.baseUrl + "/people";
+  apiURL = environment.baseUrl + "/films";
 
 constructor(private http: HttpClient) { }
 
