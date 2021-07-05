@@ -9,7 +9,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { appRoutes } from './routes';
-import { FilmsComponent } from './films/films.component';
+import { FilmsComponent } from './film/films/films.component';
+import { FilmDetailComponent } from './film/films/filmDetail/filmDetail.component';
+
+import { PeopleComponent } from './people/people/people.component';
+import { PeopleDetailComponent } from './people/peopleDetail/peopleDetail.component';
+import { PlanetsComponent } from './planets/planets/planets.component';
+import { PlanetDetailsComponent } from './planets/planetDetails/planetDetails.component';
 
 import { FilmsService } from './_services/films.service';
 
@@ -18,7 +24,13 @@ import { FilmsService } from './_services/films.service';
     AppComponent,
       HomeComponent,
       HeaderComponent,
-      FilmsComponent
+      FilmsComponent,
+      FilmDetailComponent,
+      PeopleComponent,
+      PeopleDetailComponent,
+      PlanetsComponent,
+      PlanetDetailsComponent
+      
    ],
   imports: [
     BrowserModule,
