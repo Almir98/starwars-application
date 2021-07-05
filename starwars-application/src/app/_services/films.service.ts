@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-import { Observable } from 'rxjs';
-import { Film } from '../_models/film';
 
 @Injectable()
 export class FilmsService {
@@ -11,8 +9,17 @@ export class FilmsService {
 
 constructor(private http: HttpClient) { }
 
-getAllFilms():Observable<Film[]> {
-    return this.http.get<Film[]>(this.apiURL);
+getAllFilms(){
+    return this.http.get(environment.baseUrl + "/films");
 }
+
+getAllPeople(){
+  return this.http.get(environment.baseUrl + "/people");
+}
+
+getAllPlanets(){
+  return this.http.get(environment.baseUrl + "/planets");
+}
+
 
 }
