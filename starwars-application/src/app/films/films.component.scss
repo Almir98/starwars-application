@@ -1,8 +1,9 @@
 
 .object-card {
+  max-height: 85vh;
   min-width: 20vw;
   float: left;
-  margin: 3% 0% 2% 5%;
+  margin: 3% 0% 2% 3%;
   background-color: gainsboro;
   .img-container {
     min-height: 450px;
