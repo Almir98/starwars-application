@@ -1,0 +1,58 @@
+
+.object-card {
+    min-height: 95vh;
+    min-width: 20vw;
+    float: left;
+    margin: 3% 0% 2% 3%;
+    background-color: gainsboro;
+    .img-container {
+      min-height: 450px;
+      overflow: hidden;
+      position: relative;
+      background-color: black;
+      img {
+        position: absolute;
+        width: 100%;
+        min-width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  
+    .item{
+      padding: 0;
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+  
+    .info{
+      text-align: center;
+    }
+    
+    .more-information{
+      font-size: 24px;
+    };
+  
+    .text-contaner {
+      padding: 26px 16px;
+      h4 {
+        font-weight: 700;
+      }
+  
+      .text-details {
+        margin-bottom: 20px;
+        p {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+      a {
+        color:blue;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 12px;
+      }
+    }
+  }
+  

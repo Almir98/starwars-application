@@ -1,0 +1,30 @@
+<div class="container">
+
+  <div class="object-card col-12 col-md-5 col-lg-3" *ngFor="let item of data.results">
+    <div class="img-container">
+      <img [src]="'../../assets/images/vehicles/'+ item.name +'.jpg'" alt="" />
+    </div>
+    <div class="text-contaner">
+      <h4>{{ item.title || item.name }}</h4>
+      <div class="text-details">
+        <p *ngFor="let obj of object | keyvalue | slice: 0:10">
+          <ng-container>
+            {{ objectService.printKey(obj.key) | titlecase }}:
+            {{ obj.value | titlecase }}
+          </ng-container>
+        </p>
+        <p class="item">Director:</p>
+        <p>{{item.director}}</p>
+        
+        <p class="item">Producer:</p>
+        <p>{{item.producer}}</p>
+        
+        <p class="item">Release date:</p>
+        <p>{{item.release_date}}</p>
+      </div>
+      <div class="info">
+        <a routerLink="/details" class="more-information">More information</a>
+      </div>
+    </div>
+  </div>
+</div>

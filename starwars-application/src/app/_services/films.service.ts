@@ -21,5 +21,16 @@ getAllPlanets(){
   return this.http.get(environment.baseUrl + "/planets");
 }
 
+getAllSpecies(){
+  return this.http.get(environment.baseUrl + "/species");
+}
+
+getAllStarShips(){
+  return this.http.get(environment.baseUrl + "/starships");
+}
+
+getAllVehicles(){
+  return this.http.get(environment.baseUrl + "/vehicles");
+}
 
 }
